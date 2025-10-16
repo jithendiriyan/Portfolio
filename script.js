@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_m5dka28", "template_51374aw", this)
+    emailjs.sendForm("service_rsfum6t", "template_51374aw", this)
         .then(function(response) {
             alert("Message sent successfully!");
         }, function(error) {

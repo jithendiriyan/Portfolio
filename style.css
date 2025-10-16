@@ -77,3 +77,26 @@
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 1px #0b0a0a;   
 }
+.company-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.glowing-dot {
+    display: inline-block;
+    width: 8px; 
+    height: 8px;
+    border-radius: 50%;
+    margin: 0px 5px 1px 0px;
+    background-color: #0057e4; 
+    box-shadow: 0 0 5px #003791,  
+                0 0 10px #0046b6, 
+                0 0 15px #a5aeb9; 
+}
