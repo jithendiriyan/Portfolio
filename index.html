@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jithendiriyan </title>
+    <title>Jithendiriyan Sivakumar – Full Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Jithendiriyan Sivakumar, Full Stack Developer specializing in React, Node, Express, MongoDB, and Python. View projects, skills, and contact.">
+    <meta name="keywords" content="Jithendiriyan, Full Stack Developer, React, Node.js, Express, MongoDB, Python, Portfolio, Web Developer India">
+    <link rel="canonical" href="https://jithendiriyan.github.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jithendiriyan Sivakumar – Full Stack Developer">
+    <meta property="og:description" content="Building efficient, scalable, and user-friendly applications. Explore my projects and experience.">
+    <meta property="og:image" content="assets/project_1.png">
+    <meta property="og:url" content="https://jithendiriyan.github.io/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jithendiriyan – Full Stack Developer Portfolio">
+    <meta name="twitter:description" content="Explore projects, skills, and services. Let's build something great together.">
+    <meta name="twitter:image" content="assets/project_1.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -24,8 +40,12 @@
                 <a href="#about" class="nav-link text-gray-800 hover:text-blue-600 transition">About</a>
                 <a href="#skills" class="nav-link text-gray-800 hover:text-blue-600 transition">Skills</a>
                 <a href="#projects" class="nav-link text-gray-800 hover:text-blue-600 transition">Projects</a>
+                <a href="#Experience" class="nav-link text-gray-800 hover:text-blue-600 transition">Experience</a>
                 <a href="#service" class="nav-link text-gray-800 hover:text-blue-600 transition">Service</a>
                 <a href="#contact" class="nav-link text-gray-800 hover:text-blue-600 transition">Contact</a>
+                <button id="theme-toggle" class="ml-4 p-2 rounded hover:bg-gray-100 text-gray-800" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
             <div class="md:hidden flex items-center">
                 <button id="mobile-menu-button" class="text-gray-800 hover:text-blue-600">
@@ -41,7 +61,9 @@
             <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-100">About</a>
             <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-100">Skills</a>
             <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-100">Projects</a>
+            <a href="#Experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-100">Experience</a>
             <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-100">Contact</a>
+            <button id="theme-toggle-mobile" class="mt-2 w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-100" aria-label="Toggle dark mode" aria-pressed="false">Dark Mode</button>
         </div>
     </div>
 </nav>
@@ -51,7 +73,7 @@
     <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-8 md:mb-0 animate-fade-in">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">H<span class="custom-alphapet">!</span>, I'm <span class="gradient-text">Jithendiriyan</span></h1>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi<span class="custom-alphapet">!</span>, I'm <span class="gradient-text">Jithendiriyan</span></h1>
                 <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">Full Stack Developer</h2>
                 <p class="text-gray-600 mb-8 max-w-lg">
                     I build exceptional digital experiences with modern technologies. Passionate about creating efficient, scalable, and user-friendly applications.</p>
@@ -78,7 +100,7 @@
     <div class="flex flex-col md:flex-row items-center">      
       <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center animate-fade-in delay-100">
         <div class="relative w-64 h-64 rounded-lg overflow-hidden shadow-lg">
-          <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Developer" class="w-full h-full object-cover">
+          <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Developer" class="w-full h-full object-cover" loading="lazy">
         </div>
       </div>
       <div class="md:w-2/3 md:pl-12 animate-fade-in delay-200">
@@ -103,7 +125,7 @@
             <span class="text-gray-600"><strong>Location:</strong> Gobichettipalayam, Erode, Tamil Nadu, India</span>
           </div>
         </div>
-        <a href="assets/Jithendiriyan S.pdf" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-md" target="_blank">Download CV</a>
+        <a href="assets/Jithendiriyan S.pdf" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-md" target="_blank" rel="noopener noreferrer">Download CV</a>
       </div>
     </div>
   </div>
@@ -242,10 +264,6 @@
             <span class="text-sm">JavaScript</span>
         </div>
         <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm w-24 h-24 card-hover">
-            <i class="fab fa-node-js text-green-500 text-3xl mb-2"></i>
-            <span class="text-sm">Node.js</span>
-        </div>
-        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm w-24 h-24 card-hover">
             <i class="fab fa-react text-blue-500 text-3xl mb-2"></i>
             <span class="text-sm">React.js</span>
         </div>
@@ -265,6 +283,10 @@
             <i class="fab fa-github text-black-500 text-3xl mb-2"></i>
             <span class="text-sm">Github</span>
         </div>
+        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm w-24 h-24 card-hover">
+            <i class="fa-brands fa-figma text-blue-600 text-3xl mb-2"></i>
+            <span class="text-sm">Figma</span>
+        </div>
     </div>
     
 </div>
@@ -281,7 +303,7 @@
       <!-- Project 1 -->
       <div class="bg-white rounded-lg overflow-hidden shadow-2xl card-hover animate-fade-in delay-100">
         <div class="h-48 overflow-hidden">
-          <img src="assets/project_1.png" alt="Project 1" class="w-full h-full object-cover">
+          <img src="assets/project_1.png" alt="Service Booking & Spare Parts Platform screenshot" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Service Booking & Spare Parts Platform</h3>
@@ -296,8 +318,8 @@
             <span class="px-2 py-1 bg-gray-200 text-yellow-800 text-xs rounded">Rest API</span>
           </div>
           <div class="flex justify-between">
-            <a href="https://service-now-1.onrender.com/" class="text-blue-600 hover:text-blue-800 flex items-center" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Live Demo </a>
-            <a href="https://github.com/jithendiriyan/Service-Now" class="text-gray-600 hover:text-gray-800 flex items-center" target="_blank"><i class="fab fa-github mr-1"></i> Code</a>
+            <a href="https://service-now-1.onrender.com/" class="text-blue-600 hover:text-blue-800 flex items-center" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt mr-1"></i> Live Demo </a>
+            <a href="https://github.com/jithendiriyan/Service-Now" class="text-gray-600 hover:text-gray-800 flex items-center" target="_blank" rel="noopener noreferrer"><i class="fab fa-github mr-1"></i> Code</a>
           </div>
         </div>
       </div>
@@ -305,7 +327,7 @@
       <!-- Project 2 -->
       <div class="bg-white rounded-lg overflow-hidden shadow-2xl card-hover animate-fade-in delay-200">
         <div class="h-48 overflow-hidden">
-          <img src="assets/project_2.png" alt="Project 2" class="w-full h-full object-cover">
+          <img src="assets/project_2.png" alt="Temperature Conversion Platform screenshot" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Temperature Conversion Platform</h3>
@@ -318,8 +340,8 @@
             <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Netlify</span>
           </div>
           <div class="flex justify-between">
-            <a href="https://temperatureconversionscale.netlify.app/" class="text-blue-600 hover:text-blue-800 flex items-center" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
-            <a href="https://github.com/jithendiriyan/Temperature-Conversion" class="text-gray-600 hover:text-gray-800 flex items-center" target="_blank"><i class="fab fa-github mr-1"></i> Code</a>
+            <a href="https://temperatureconversionscale.netlify.app/" class="text-blue-600 hover:text-blue-800 flex items-center" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
+            <a href="https://github.com/jithendiriyan/Temperature-Conversion" class="text-gray-600 hover:text-gray-800 flex items-center" target="_blank" rel="noopener noreferrer"><i class="fab fa-github mr-1"></i> Code</a>
           </div>
         </div>
       </div>
@@ -327,7 +349,7 @@
       <!-- Project 3 -->
       <div class="bg-white rounded-lg overflow-hidden shadow-2xl card-hover animate-fade-in delay-300">
         <div class="h-48 overflow-hidden">
-          <img src="assets/project_3.png" alt="Project 3" class="w-full h-full object-cover">
+          <img src="assets/project_3.png" alt="Daily Quotes project screenshot" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Daily Quotes</h3>
@@ -342,10 +364,10 @@
             <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Netlify</span>
           </div>
           <div class="flex justify-between">
-            <a href="https://daily-quotes-lucky.web.app/" class="text-blue-600 hover:text-blue-800 flex items-center" target="_blank">
+            <a href="https://daily-quotes-lucky.web.app/" class="text-blue-600 hover:text-blue-800 flex items-center" target="_blank" rel="noopener noreferrer">
               <i class="fas fa-external-link-alt mr-1"></i> Live Demo
             </a>
-            <a href="https://github.com/jithendiriyan/Daily-quotes" class="text-gray-600 hover:text-gray-800 flex items-center" target="_blank">
+            <a href="https://github.com/jithendiriyan/Daily-quotes" class="text-gray-600 hover:text-gray-800 flex items-center" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-github mr-1"></i> Code
             </a>
           </div>
@@ -371,7 +393,7 @@
       <li>
         <div class="flex justify-between items-start mb-1">
           <div class="flex items-center space-x-2">
-            <img src="./assets/freelancer__logo.png" alt="Freelancer Logo" class="company-logo">
+            <img src="./assets/freelancer__logo.png" alt="Freelancer logo" class="company-logo" loading="lazy">
             <span class="font-medium text-gray-900">Freelancer</span>
           </div>
           <span class="text-gray-600 whitespace-nowrap">June 2025 - Present</span>
@@ -390,7 +412,7 @@
       <li>
         <div class="flex justify-between items-start mb-1">
           <div class="flex items-center space-x-2">
-            <img src="./assets/logo__genpact.jpg" alt="Genpact Logo" class="company-logo">
+            <img src="./assets/logo__genpact.jpg" alt="Genpact logo" class="company-logo" loading="lazy">
             <span class="font-medium text-gray-900">Genpact India Private Limited</span>
           </div>
           <span class="text-gray-600 whitespace-nowrap">June 2024 - November 2024</span>
@@ -409,7 +431,7 @@
       <li>
         <div class="flex justify-between items-start mb-1">
           <div class="flex items-center space-x-2">
-            <img src="./assets/Logo_Gravitech.png" alt="Gravitech Solutions Logo" class="company-logo">
+            <img src="./assets/Logo_Gravitech.png" alt="Gravitech Solutions logo" class="company-logo" loading="lazy">
             <span class="font-medium text-gray-900">Gravitech Solutions Private Limited</span>
           </div>
           <span class="text-gray-600 whitespace-nowrap">May 2023 - November 2023</span>
@@ -447,7 +469,7 @@
               I build attractive, easy-to-navigate websites that showcase your brand and address the needs of your audience.
             </span>
           </h2>
-          <img src="assets/web_design.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Web Design Image">
+          <img src="assets/web_design.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Web design image" loading="lazy">
         </div>
       </div>
 
@@ -458,7 +480,7 @@
           <h2 class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white text-xl px-4">
             <span class="bg-blue-500 bg-opacity-70 px-4 py-2 rounded">I utilize diverse technologies to build websites that deliver performance, flexibility, and security.</span>
           </h2>
-          <img src="assets/web_developer.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Web Developer Image">
+          <img src="assets/web_developer.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Web development image" loading="lazy">
         </div>
       </div>
 
@@ -476,12 +498,12 @@
     <div class="lg:col-span-3 flex flex-col sm:flex-row justify-center items-center gap-8">
       <!-- Card 4 -->
       <div class="group w-full max-w-sm border border-black transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg shadow-2xl">
-        <h3 class="text-xl text-center bg-blue-400 font-semibold py-2">Maintainance</h3>
+        <h3 class="text-xl text-center bg-blue-400 font-semibold py-2">Maintenance</h3>
         <div class="relative w-full h-40 overflow-hidden">
           <h2 class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white text-xl px-4">
-            <span class="bg-blue-500 bg-opacity-70 px-4 py-2 rounded ">I ensure your website stays current and runs smoothly with regular maintainnance and prompt troubleshooting.</span>
+            <span class="bg-blue-500 bg-opacity-70 px-4 py-2 rounded ">I ensure your website stays current and runs smoothly with regular maintenance and prompt troubleshooting.</span>
           </h2>
-          <img src="assets/maintain.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Maintaince Image">
+          <img src="assets/maintain.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Maintenance image" loading="lazy">
         </div>
       </div>
 
@@ -492,7 +514,7 @@
           <h2 class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white text-xl px-4">
             <span class="bg-blue-500 bg-opacity-70 px-4 py-2 rounded">I optimize your website for responsiveness, ensuring it performs beautifully on all devices.</span>
           </h2>
-          <img src="assets/mobile_opt.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Mobile Optimization Image">
+          <img src="assets/mobile_opt.jpg" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" alt="Mobile optimization image" loading="lazy">
         </div>
       </div>
 </div>
@@ -551,21 +573,21 @@
         <div class="mt-8">
           <h4 class="font-medium mb-4">Follow Me</h4>
           <div class="flex space-x-4">
-            <a href="https://www.linkedin.com/in/jithendiriyansivakumar/" target="_blank" class="bg-gray-200 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">
-              <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/jithendiriyansivakumar/" target="_blank" rel="noopener noreferrer" class="bg-gray-200 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition" aria-label="LinkedIn profile">
+              <i class="fab fa-linkedin-in text-blue-600"></i>
             </a>
-            <a href="https://github.com/jithendiriyan/Jithendiriyan" target="_blank"
-              class="bg-gray-200 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">
-              <i class="fab fa-github"></i>
+            <a href="https://github.com/jithendiriyan" target="_blank" rel="noopener noreferrer"
+              class="bg-gray-200 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition" aria-label="GitHub profile">
+              <i class="fab fa-github text-blue-600"></i>
             </a>
-            <a href="https://x.com/jithendiriyan" target="_blank"
-              class="bg-gray-200 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition">
-              <i class="fab fa-x-twitter"></i> 
+            <a href="https://x.com/jithendiriyan" target="_blank" rel="noopener noreferrer"
+              class="bg-gray-200 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition" aria-label="X (Twitter) profile">
+              <i class="fab fa-x-twitter text-blue-600"></i> 
             </a>
           </div>
           <div class="mt-4">
             <h4 class="font-medium mb-4">Also Hire me as Freelancer </h4>
-              <a href="https://www.fiverr.com/s/yv5wL1G" target="_blank"
+              <a href="https://www.fiverr.com/s/yv5wL1G" target="_blank" rel="noopener noreferrer"
               class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition">
                <span class="glowing-dot"></span> Let's Work Together 
               </a>
@@ -611,17 +633,17 @@
                 <p class="text-gray-400 mt-2">© 2025 Jithendiriyan Sivakumar. All rights reserved.</p>
             </div>
             <div class="flex space-x-6">
-                <a href="https://www.linkedin.com/in/jithendiriyansivakumar/" class="text-gray-400 hover:text-white transition">
+                <a href="https://www.linkedin.com/in/jithendiriyansivakumar/" class="text-gray-400 hover:text-white transition" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/jithendiriyan/Jithendiriyan" class="text-gray-400 hover:text-white transition">
+                <a href="https://github.com/jithendiriyan" class="text-gray-400 hover:text-white transition" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://x.com/jithendiriyan" class="text-gray-400 hover:text-white transition">
+                <a href="https://x.com/jithendiriyan" class="text-gray-400 hover:text-white transition" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile">
 
                     <i class="fab fa-x-twitter"></i>
                 </a>
-                <a href="https://www.instagram.com/mickey.__.10" class="text-gray-400 hover:text-white transition">
+                <a href="https://www.instagram.com/mickey.__.10" class="text-gray-400 hover:text-white transition" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>

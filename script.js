@@ -78,6 +78,48 @@ if (skillsSection) {
     observer.observe(skillsSection);
 }
 
+// Dark mode toggle with persistence
+(function() {
+    const root = document.documentElement;
+    const desktopToggle = document.getElementById('theme-toggle');
+    const mobileToggle = document.getElementById('theme-toggle-mobile');
+
+    function setTheme(isDark) {
+        if (isDark) {
+            root.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (desktopToggle) {
+                desktopToggle.setAttribute('aria-pressed', 'true');
+                desktopToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                desktopToggle.title = 'Switch to light mode';
+            }
+            if (mobileToggle) mobileToggle.setAttribute('aria-pressed', 'true');
+        } else {
+            root.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (desktopToggle) {
+                desktopToggle.setAttribute('aria-pressed', 'false');
+                desktopToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                desktopToggle.title = 'Switch to dark mode';
+            }
+            if (mobileToggle) mobileToggle.setAttribute('aria-pressed', 'false');
+        }
+    }
+
+    function initTheme() {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') return setTheme(true);
+        if (saved === 'light') return setTheme(false);
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setTheme(prefersDark);
+    }
+
+    initTheme();
+
+    if (desktopToggle) desktopToggle.addEventListener('click', () => setTheme(!document.documentElement.classList.contains('dark')));
+    if (mobileToggle) mobileToggle.addEventListener('click', () => setTheme(!document.documentElement.classList.contains('dark')));
+})();
+
 // Initialize EmailJS
 document.addEventListener("DOMContentLoaded", function () {
     emailjs.init("uCZVHQe78prgnT8Xx"); // Your public key
